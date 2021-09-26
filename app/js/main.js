@@ -1,3 +1,8 @@
-$(function name(params) {
+$(function () {
   
-})
+  $('.top-slider__inner').slick({
+
+  });
+
+
+});
