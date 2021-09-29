@@ -14,11 +14,21 @@
 body {
   font-size: 14px;
   line-height: 1.4;
+  letter-spacing: 0.03em;
   color: $default;
+  @extend %ruda-600;
 }
 
 .container {
   max-width: 1290px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.header__link,
+.search input,
+.user-nav__link{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left center;
 }
