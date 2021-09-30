@@ -10,6 +10,10 @@
   background-color: $text;
 
   &__top {
+    background-color: $text
+  }  
+  &__top-wrap {
+    
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -43,6 +47,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px;
+    background-color: $accent;
   }
 
   &__bottom-inner {
@@ -54,6 +59,8 @@
     max-width: 200px;
     width: 100%;
     margin-right: 37px;
+    line-height: 1.2;
+    letter-spacing: 0em;
   }
 
   .burger {
@@ -97,7 +104,7 @@
   .search {
     display: flex;
     
-    input {
+    &__input {
       color: $text;
       background-color: $white;
       padding: 15px;
