@@ -17,18 +17,17 @@ body{
 }
 
 body {
+  height: 100%;
   font-size: 14px;
   line-height: 1.4;
-  letter-spacing: 0.03em;
   color: $default;
+  background-color: $white;
   @extend %ruda-600;
-  display: flex;
-  flex-direction: column;
 }
 
-.header__top,
+.header__top-wrap,
 .container {
-  max-width: 1290px;
+  max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -44,4 +43,30 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left center;
+}
+
+.button {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  @extend %opensans-400;
+  padding: 11px 24px;
+  color: $white;
+  background-color: $accent;
+  border-radius: 6px;
+  transition: background-color 0.5s, color 0.3s, box-shadow 0.5s;
+}
+
+.button:hover {
+  background-color: $hovergreen;
+}
+
+.button:focus {
+  box-shadow: 0px 0px 0px 4px #e0edcf;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: $accent;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
