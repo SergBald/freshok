@@ -214,6 +214,7 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 12px 18px;
+    fill: $default;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 6px;
     z-index: 1;
@@ -226,17 +227,22 @@
   .slick-prev {
     left: 10%;
   }
-  
+
   .slick-next:hover,
-  .slick-prev:hover{
+  .slick-prev:hover {
     background-color: $green-200;
     fill: $accent;
   }
 
+  .slick-next:focus,
+  .slick-prev:focus {
+    background: $silver-200;
+    box-shadow: 0px 0px 0px 3px rgba(99, 166, 14, 0.5);
+  }
+  
   .slick-next:active,
   .slick-prev:active {
-    background-color: $silver-300;
-    fill: $accent;
+    background-color: $green-300;
   }
 }
 
