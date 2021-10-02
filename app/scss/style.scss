@@ -228,12 +228,53 @@
   }
   
   .slick-next:hover,
-  .slick-prev:hover,
+  .slick-prev:hover{
+    background-color: $green-200;
+    fill: $accent;
+  }
+
   .slick-next:active,
   .slick-prev:active {
-    background-color: $silver-100;
-    fill: $silver-600;
+    background-color: $silver-300;
+    fill: $accent;
   }
+}
+
+.advant {
+  background-color: $silver-100;
+  padding: 48px 0 29px 0;
+
+  &__items {
+    display: flex;
+    justify-content: space-evenly; 
+  }
+
+  /* .advant__item */
+
+  &__item {
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 6px 5px 7px 74px;
+  }
+
+  /* .advant__subtitle */
+
+  &__subtitle {
+    font-size: 16px;
+    @extend %opensans-600;
+    color: $title;
+    margin-bottom: 5px;
+  }
+
+  /* .advant__text */
+
+  &__text {
+    max-width: 190px;
+    @extend %opensans-400;
+    color: $default;
+  }
+
 }
 
 
