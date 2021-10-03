@@ -32,14 +32,29 @@ body {
   padding: 0 15px;
 }
 
+.section {
+  padding: 72px 0;
+}
 
 .main {
   flex-grow: 1;
 }
 
+.title {
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title;
+  @extend %ruda-600;
+  margin-bottom: 30px;
+}
+
 .header__link,
 .search input,
-.user-nav__link{
+.user-nav__link,
+.advant__item,
+.product-card__heart {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: left center;
