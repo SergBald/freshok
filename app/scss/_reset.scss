@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+*:active,
+*:focus {
+  outline: transparent;
+}
+
 ul,
 ol {
   padding: 0;
