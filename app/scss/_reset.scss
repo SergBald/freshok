@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+*:active,
+*:focus {
+  outline: transparent;
+}
+
 ul,
 ol {
   padding: 0;
@@ -50,9 +55,12 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
+  text-transform: inherit;
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
 a {
