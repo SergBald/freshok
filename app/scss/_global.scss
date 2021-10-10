@@ -23,8 +23,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.03em;
   color: $default;
-  background-color: $white;
-  
+  background-color: $white; 
 }
 
 .container {
@@ -70,7 +69,7 @@ body {
   padding: 11px 24px;
   color: $white;
   background-color: $accent;
-  border-radius: 6px;
+  border-radius: $b-radius;
   outline: transparent;
   transition: background-color 0.5s, color 0.3s, box-shadow 0.5s;
 
@@ -90,20 +89,7 @@ body {
   }
 }
 
-.button-cart {
-  width: 32px;
-  height: 32px;
-  padding: 6px 0 8px 0;
-  fill: $white;
-  background-color: $accent;
-  background-size: cover;
-  border-radius: 3px;
-}
 
-.search__input,
-.footer-top__form-input {
-  color: $decor;
-}
 
 .social {
   transition: opacity 0.5s;
