@@ -65,13 +65,12 @@ body {
 }
 
 .button {
-  @extend %opensans;
   font-weight: 400;
   font-size: 18px;
   padding: 11px 24px;
   color: $white;
   background-color: $accent;
-  border-radius: $b-radius;
+  border-radius: 6px;
   outline: transparent;
   transition: background-color 0.5s, color 0.3s, box-shadow 0.5s;
 

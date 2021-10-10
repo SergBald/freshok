@@ -16,7 +16,7 @@
   
   // &__top {
   //   background-color: $text;
-  //   @extend %opensans-700;
+      //  font-weight: 700;  
   // }
 
   // &__top-wrap {
@@ -25,7 +25,6 @@
   //   text-transform: uppercase;
   //   font-size: 13px;
   //   font-weight: 700;
-  //   letter-spacing: 0.03em;
   //   padding: 16px 15px;
   // }
 
@@ -79,8 +78,6 @@
   //   width: 100%;
   //   height: 50px;
   //   text-align: right;
-  //   letter-spacing: 0.03em;
-  //   @extend %opensans-600;
   //   color: $accent;
   //   background-color: $white;
   //   padding: 15px 38px 15px 18px;
@@ -221,8 +218,8 @@
   //     width: 18px;
   //     height: auto;
   //     font-size: 10px;
-  //     @extend %opensans-600;
   //     line-height: 1.8;
+  // letter-spacing: 0;
   //     color: $decor;
   //     text-align: center;
   //     border-radius: 50%;
@@ -252,11 +249,13 @@
   }
 
   &__title {
+    @extend %ruda;
     max-width: 761px;
     font-size: 60px;
+    font-weight: 900;
     line-height: 1.3;
+    letter-spacing: 0;
     text-transform: uppercase;
-    @extend %ruda-900;
     margin-bottom: 6px;
   }
 
@@ -266,7 +265,7 @@
 
   &__text {
     font-size: 16px;
-    @extend %opensans-400;
+    font-weight: 400;
     margin-bottom: 37px;
   }
 
@@ -330,14 +329,14 @@
 
   &__subtitle {
     font-size: 16px;
-    @extend %opensans-600;
+    font-weight: 600;
     color: $title;
     margin-bottom: 5px;
   }
 
   &__text {
     max-width: 190px;
-    @extend %opensans-400;
+    font-weight: 400;
     color: $default;
   }
 }
@@ -348,7 +347,6 @@
   justify-content: center;
 
   &__btn {
-    @extend %opensans;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -442,16 +440,15 @@
     line-height: 1.4;
     letter-spacing: 0.03em;
     color: $title;
-    @extend %opensans-600;
   }
 
   &__price {
     position: absolute;
     display: flex;
     flex-direction: column;
+    font-weight: 400;
     line-height: 1;
     color: $silver-600;
-    @extend %opensans-400;
     left: 18px;
     bottom: 18px;
   }
@@ -498,11 +495,10 @@
 
   &__badge {
     font-size: 10px;
+    font-weight: 700;
     line-height: 1;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $white;
-    @extend %opensans-700;
     padding: 3px 6px;
     border-radius: 6px;
   }
@@ -526,10 +522,10 @@
 
 
 .footer {
+  font-weight: 400;
   color: $white;
   background-color: $text;
   padding: 30px 0;
-  @extend %opensans-400;
   transition: color 0.5s;
 
   &__logo {
@@ -571,9 +567,9 @@
   &__form-btn {
     padding: 12px 16px 10px 16px;
     font-size: 12px;
+    font-weight: 700;
     line-height: 1.3;
     text-transform: uppercase;
-    @extend %opensans-700;
     border-radius: 0 6px 6px 0;
     background-color: $accent;
     border: 1px solid transparent;
