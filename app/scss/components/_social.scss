@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: opacity 0.5s;
+
+  &__item {
+    width: 32px;
+    height: 32px;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
+      transition: opacity 0.5s;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-position: center;
+  }
+}
