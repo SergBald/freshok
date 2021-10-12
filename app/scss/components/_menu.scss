@@ -10,15 +10,15 @@
       padding-left: 44px;
       background-image: url('../images/icon/delivery.svg');
       background-repeat: no-repeat;
-      background-size: 32px 22px;
+      background-size: contain;
       background-position: left center;
     }
 
     &--phone {
-      padding-left: 44px;
+      padding-left: 40px;
       background-image: url('../images/icon/phone.svg');
       background-repeat: no-repeat;
-      background-size: 22px 22px;
+      background-size: contain;
       background-position: left center;
     }
 

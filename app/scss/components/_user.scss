@@ -21,6 +21,25 @@
     }
   }
 
+  &__profile {
+    fill: $white;
+    
+    &--user {
+       width: 25px;
+       height: 32px;
+    }
+
+    &--heart {
+       width: 32px;
+       height: 29px;
+    }
+
+    &--cart {
+       width: 32px;
+       height: 31px;
+    }
+  }
+
   &__num {
     position: absolute;
     right: 30px;

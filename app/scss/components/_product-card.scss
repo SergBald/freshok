@@ -29,6 +29,11 @@
     }
   }
 
+  &__ico {
+    width: 32px;
+    height: 29px;
+  }
+
   &__img {
     object-fit: cover;
     margin-bottom: 10px;
@@ -82,7 +87,16 @@
     width: 32px;
     height: 32px;
     padding: 4px 0 8px 0;
-    fill: $white;
     border-radius: 3px;
+
+    &--cart {
+      width: 16px;
+      height: 16px;
+      fill: $white;
+
+      &:active {
+        opacity: 0.5;
+      }
+    }
   }
 }
