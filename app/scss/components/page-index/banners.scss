@@ -1,0 +1,50 @@
+.banners {
+  padding: 0 0 70px 0;
+
+  &__row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 30px;
+    height: 300px;
+  }
+
+  &__item {
+    padding: 76px 32px;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: $b-radius;
+    
+    
+    &--white {
+      color: $white;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+  }
+
+  &__subtitle {
+    @extend %ruda;
+    max-width: 170px;
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-bottom: 12px;
+
+    &--shadow {
+      max-width: 350px;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &__link {
+    border-bottom: 2px solid;
+    padding-bottom: 6px;
+  }
+}
