@@ -1,5 +1,6 @@
 .promo {
   text-align: center;
+  background-color: $silver-300;
 
   &__filter {
     margin-bottom: 50px;
@@ -13,9 +14,8 @@
   padding: 12px 12px 12px 0;
 
   &__img {
-    display: block;
     object-position: left center;
-    object-fit: contain;
+    object-fit: fill;
   }
 
   &__info-box {

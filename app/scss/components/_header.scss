@@ -4,7 +4,7 @@
   &__top {
     justify-content: space-between;
     background-color: $dark-800;
-    padding: 18px 0 15px;
+    padding: 21px 0 15px;
   }
 
   &__inner {
@@ -19,7 +19,11 @@
   }
 
   &__logo {
-    margin-right: 24px;
+    margin-right: 25px;
+  }
+
+  &__catalog {
+    margin-right: 30px;
   }
 
   &__button {
@@ -27,7 +31,7 @@
     font-size: 14px;
     font-weight: 600;
     color: $green-900;
-    padding: 15px 38px 15px 58px;
+    padding: 14px 41px 14px 59px;
     background-repeat: no-repeat;
     background-color: $white;
     transition: background-color 0.5s;
