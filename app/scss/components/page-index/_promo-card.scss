@@ -1,13 +1,13 @@
-.product-card {
+.promo-card {
   position: relative;
   max-width: 300px;
-  height: 410px;
+  height: 124px;
   letter-spacing: 0.03em;
   text-align: left;
   background-color: $white;
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: $b-radius;
-  padding: 55px 18px 18px;
+  padding: 12px;
 
   &:hover {
     border-color: $green-900;
@@ -39,12 +39,11 @@
   }
 
   &__img {
+    object-position: left center;
     object-fit: cover;
-    margin-bottom: 10px;
   }
 
   &__title {
-    max-height: 60px;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.03em;
@@ -56,8 +55,6 @@
   &__prices {
     position: absolute;
     display: flex;
-    flex-direction: column;
-    font-weight: 400;
     line-height: 1;
     color: $silver-600;
     left: 18px;
@@ -65,11 +62,15 @@
   }
 
   &__price {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
     color: $dark-500;
   }
 
   &__price--old {
     position: relative;
+    font-size: 12px;
     color: $silver-600;
     margin-bottom: 3px;
 
