@@ -8,10 +8,7 @@
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: $b-radius;
   padding: 55px 18px 18px;
-
-  &:hover {
-    border-color: $green-900;
-  }
+  transition: border-color 0.5s;
 
   &__badges {
     position: absolute;
@@ -103,5 +100,9 @@
         opacity: 0.5;
       }
     }
+  }
+
+  &:hover {
+    border-color: $green-900;
   }
 }

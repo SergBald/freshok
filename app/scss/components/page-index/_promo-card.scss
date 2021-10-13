@@ -1,108 +1,80 @@
+.promo {
+  text-align: center;
+
+  &__filter {
+    margin-bottom: 50px;
+    letter-spacing: 0.1em;
+  }
+}
+
 .promo-card {
-  position: relative;
-  max-width: 300px;
+  display: flex;
   height: 124px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  background-color: $white;
-  border: 1px solid rgba(17, 17, 17, 0.2);
-  border-radius: $b-radius;
-  padding: 12px;
+  padding: 12px 12px 12px 0;
 
-  &:hover {
-    border-color: $green-900;
+  &__img {
+    display: block;
+    object-position: left center;
+    object-fit: contain;
   }
 
-  &__badges {
-    position: absolute;
-    left: 12px;
-    top: 12px;
+  &__info-box {
+    position: relative;
   }
 
-  &__heart {
+  &__status {
     position: absolute;
-    right: 12px;
-    top: 12px;
-    width: 40px;
-    height: 40px;
-    fill: $silver-600;
+    left: 0;
+    bottom: 24px;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
 
-    &:hover {
-      fill: $yellow-900;
-      transition: fill 0.5s;
+    &--avail {
+      color: $green-900;
+    }
+
+    &--lack {
+      color: $silver-600;
+    }
+
+    &--endeth {
+      color: $red-900;
     }
   }
 
-  &__ico {
-    width: 32px;
-    height: 29px;
-  }
-
-  &__img {
-    object-position: left center;
-    object-fit: cover;
-  }
-
-  &__title {
-    font-size: 14px;
-    line-height: 1.4;
-    letter-spacing: 0.03em;
-    color: $dark-900;
-
-    @include line-clamp(14, 1.4, 3);
-  }
-
   &__prices {
-    position: absolute;
-    display: flex;
-    line-height: 1;
-    color: $silver-600;
-    left: 18px;
-    bottom: 18px;
+    flex-direction: row-reverse;
+    width: max-content;
+    align-items: baseline;
+    left: 50%;
+    bottom: -3px;
+    transform: translate(-39%);
   }
 
   &__price {
     font-size: 20px;
-    font-weight: 600;
-    display: flex;
-    color: $dark-500;
+    line-height: 1;
+    margin-right: 10px;
   }
 
   &__price--old {
-    position: relative;
     font-size: 12px;
     color: $silver-600;
-    margin-bottom: 3px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      transform: rotate(-15deg);
-      background-color: $silver-600;
-    }
   }
 
-  &__btn {
+  &__rating {
     position: absolute;
-    right: 18px;
-    bottom: 18px;
-    width: 32px;
-    height: 32px;
-    padding: 4px 0 8px 0;
-    border-radius: 3px;
+    right: 12px;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
 
-    &--cart {
-      width: 16px;
-      height: 16px;
-      fill: $white;
-
-      &:active {
-        opacity: 0.5;
-      }
-    }
+  &__star {
+    width: 16px;
+    height: 16px;
+    fill: $yellow-900;
   }
 }
