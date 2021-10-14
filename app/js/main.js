@@ -8,6 +8,7 @@ $(function () {
   $('.brands__slider').slick({
     arrows: false,
     slidesToShow: 6,
+    slidesToScroll: 6,
   });
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');

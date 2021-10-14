@@ -7,11 +7,9 @@
     align-items: center;
   }
 
-
   &__item {
-    &:not(:last-child){
-      margin-right: 140px;
-    }
+    padding: 0 70px;
+    
   }
 
   &__link {

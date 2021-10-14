@@ -4,13 +4,14 @@
   &__top {
     justify-content: space-between;
     background-color: $dark-800;
-    padding: 21px 0 15px;
+    padding: 10px 0;
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 6px 0;
   }
 
   &__bottom {
