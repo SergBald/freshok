@@ -13,7 +13,7 @@ const replace      = require('gulp-replace');
 const cheerio      = require('gulp-cheerio');
 
 const svgSprites = () => {
-  return src (['app/images/**/*.svg'])
+  return src (['app/images/svg/**/*.svg'])
   .pipe(cheerio({
     run: function($) {
       $('[fill]').removeAttr('fill');      
@@ -116,8 +116,8 @@ function watching() {
   watch(['app/**/*.html']).on('change', browserSync.reload);
   watch(['app/html/**/*.html'], htmlInclude);
   watch(['app/scss/**/*.scss']).on('change', browserSync.reload);
-  watch(['app/images/**/*.svg'], svgSprites);
-  watch(['app/images/*.svg']).on('change', browserSync.reload);
+  watch(['app/images/svg/**/*.svg'], svgSprites);
+  watch(['app/images/svg/*.svg']).on('change', browserSync.reload);
 }
 
 exports.svgSprites = svgSprites;

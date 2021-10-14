@@ -11,6 +11,7 @@
   }
 
   &__item {
+    @include bg;
     background-position: left top;
     padding: 0px 5px 7px 74px;
 

@@ -26,7 +26,6 @@ body {
   overflow: hidden;
 }
 
-
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -49,19 +48,10 @@ body {
   text-transform: uppercase;
   color: $dark-900;
   margin-bottom: 30px;
-}
 
-.header__link,
-.burger__arrow,
-.burger__arrow-active,
-.search input,
-.user-nav__link,
-.advant__item,
-.product-card__heart,
-.social__link {
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: left center;
+  &--left {
+    text-align: left;
+  }
 }
 
 .button {

@@ -16,7 +16,7 @@
 
   &__bottom {
     background-color: $green-900;
-    padding: 25px 0;
+    padding: 20px 0;
   }
 
   &__logo {
@@ -44,18 +44,19 @@
       top: 50%;
       transform: translate(60%, -50%);
       width: 24px;
-      height: 17px;
-      background-image: url('../images/icon/burger.svg');
+      height: 20px;
+      background-image: url('../images/svg/icon/burger.svg');
     }
 
     &::after {
       content: '';
       position: absolute;
       top: 50%;
+      right: 12px;
       transform: translate(7%, -50%);
       width: 8px;
       height: 4px;
-      background-image: url('../images/icon/chevron.svg');
+      background-image: url('../images/svg/icon/chevron.svg');
     }
 
     &:focus {

@@ -1,6 +1,10 @@
 .top-product {
   text-align: center;
 
+  &__title {
+    margin-bottom: 27px;
+  }
+
   &__filter {
     margin-bottom: 50px;
   }
@@ -9,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px 30px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   &__btn {

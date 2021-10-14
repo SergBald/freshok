@@ -9,10 +9,10 @@
   .footer-top {
     display: flex;
     justify-content: space-between;
-    margin: 25px 0 40px 0;
+    margin: 30px 0 40px 0;
 
     &__left-bar {
-      margin-right: 150px;
+      margin-right: 85px;
     }
 
     &__update {
@@ -20,7 +20,7 @@
       line-height: 1;
       font-weight: 400;
       letter-spacing: 0;
-      margin-bottom: 18px;
+      margin: 3px 0 16px 0;
     }
   }
 
@@ -29,7 +29,7 @@
 
     &__input {
       width: 100%;
-      padding: 9px 12px;
+      padding: 9px 2px 9px 10px;
       background-image: none;
 
       &:focus,
@@ -60,7 +60,7 @@
 
   .nav-menu {
     column-count: 3;
-    column-gap: 74px;
+    column-gap: 65px;
 
     &__item {
       margin-bottom: 18px;
@@ -81,13 +81,21 @@
     }
   }
 
+  &__menu-item:not(:last-child) {
+    margin-right: 0;    
+  }
+
+  &__social {
+    margin-left: 14px;
+  }
+
   .footer-social__item:not(:last-child) {
     margin-right: 10px;
   }
 
   .footer-bottom {
     border-top: 1px solid rgba($white, 0.1);
-    padding-top: 24px;
+    padding-top: 17px;
 
     &__wrap {
       display: flex;
