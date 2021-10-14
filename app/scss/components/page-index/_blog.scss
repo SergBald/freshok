@@ -16,6 +16,11 @@
     color: $green-900;
     padding-bottom: 5px;
     border-bottom: 2px solid $green-900;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $hovergreen;
+    }
   }
 
   &__items {
@@ -77,6 +82,11 @@
     letter-spacing: 0;
     padding: 18px;
     @include line-clamp(16, 1.5, 4);
+    transition: color 0.5s;
+
+    &:hover {
+      color: $green-900;
+    }
   }
 }
 
