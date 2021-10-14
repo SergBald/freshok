@@ -1,0 +1,80 @@
+.promo {
+  text-align: center;
+  background-color: $silver-300;
+
+  &__filter {
+    margin-bottom: 50px;
+    letter-spacing: 0.1em;
+  }
+}
+
+.promo-card {
+  display: flex;
+  height: 124px;
+  padding: 12px 12px 12px 0;
+
+  &__img {
+    object-position: left center;
+    object-fit: fill;
+  }
+
+  &__info-box {
+    position: relative;
+  }
+
+  &__status {
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &--avail {
+      color: $green-900;
+    }
+
+    &--lack {
+      color: $silver-600;
+    }
+
+    &--endeth {
+      color: $red-900;
+    }
+  }
+
+  &__prices {
+    flex-direction: row-reverse;
+    width: max-content;
+    align-items: baseline;
+    left: 50%;
+    bottom: -3px;
+    transform: translate(-39%);
+  }
+
+  &__price {
+    font-size: 20px;
+    line-height: 1;
+    margin-right: 10px;
+  }
+
+  &__price--old {
+    font-size: 12px;
+    color: $silver-600;
+  }
+
+  &__rating {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  &__star {
+    width: 16px;
+    height: 16px;
+    fill: $yellow-900;
+  }
+}

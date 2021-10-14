@@ -1,0 +1,82 @@
+.header {
+  color: $white;
+
+  &__top {
+    justify-content: space-between;
+    background-color: $dark-800;
+    padding: 10px 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+  }
+
+  &__bottom {
+    background-color: $green-900;
+    padding: 20px 0;
+  }
+
+  &__logo {
+    margin-right: 25px;
+  }
+
+  &__catalog {
+    margin-right: 30px;
+  }
+
+  &__button {
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: $green-900;
+    padding: 14px 41px 14px 59px;
+    background-repeat: no-repeat;
+    background-color: $white;
+    transition: background-color 0.5s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translate(60%, -50%);
+      width: 24px;
+      height: 20px;
+      background-image: url('../images/svg/icon/burger.svg');
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 12px;
+      transform: translate(7%, -50%);
+      width: 8px;
+      height: 4px;
+      background-image: url('../images/svg/icon/chevron.svg');
+    }
+
+    &:focus {
+      background-color: $white;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $green-200;
+      border-radius: 6px 6px 0 0;
+    }
+
+    &:hover::after {
+      transform: rotate(180deg);
+      top: 45%;
+      transition: rotate 0.5s;
+    }
+  }
+
+  &__form {
+    margin-right: 45px;
+  }
+}

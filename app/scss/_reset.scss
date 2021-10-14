@@ -13,8 +13,8 @@ html {
   outline: transparent;
 }
 
-ul,
-ol {
+ul[class],
+ol[class] {
   padding: 0;
 }
 
@@ -61,6 +61,10 @@ select {
   border-color: transparent;
   cursor: pointer;
   padding: 0;
+}
+
+button,input {
+  overflow: visible;
 }
 
 a {

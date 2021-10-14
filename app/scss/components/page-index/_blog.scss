@@ -1,0 +1,83 @@
+.blog {
+  padding-bottom: 68px;
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__news {
+    position: absolute;
+    right: 0;
+    top: -60px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $green-900;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $green-900;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+  }
+
+  &__item {
+    max-width: 410px;
+    width: 100%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  &__item {
+    border-radius: $b-radius;
+    overflow: hidden;
+  }
+
+  &__item-info {
+    height: 100%;
+    color: $dark-900;
+  }
+
+  &__bg {
+    max-height: 240px;
+    height: 100%;
+    @include bg;
+    padding: 0 20px 20px;
+  }
+
+  &__label {
+    display: block;
+    width: 65px;
+    height: 76px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 18px 2px 2px 2px;
+    background-color: $white;
+    border-radius: 0 0 4px 4px;
+    text-align: center;
+  }
+
+  &__date {
+    @extend %ruda;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0;
+    display: block;
+    margin-top: 4px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0;
+    padding: 18px;
+    @include line-clamp(16, 1.5, 4);
+  }
+}
+
+

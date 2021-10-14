@@ -1,0 +1,33 @@
+.advant {
+  background-color: $silver-100;
+  padding: 48px 0 29px 0;
+  margin: 0 auto;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    margin-left: -45px;
+    letter-spacing: 0;
+  }
+
+  &__item {
+    @include bg;
+    background-position: left top;
+    padding: 0px 5px 7px 74px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: $dark-900;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    max-width: 190px;
+    font-weight: 400;
+  }
+}

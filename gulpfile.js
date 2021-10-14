@@ -7,7 +7,41 @@ const uglify       = require('gulp-uglify');
 const imagemin     = require('gulp-imagemin');
 const del          = require('del');
 const browserSync  = require('browser-sync').create();
+const fileInclude  = require('gulp-file-include');
+const svgSprite    = require('gulp-svg-sprite');
+const replace      = require('gulp-replace');
+const cheerio      = require('gulp-cheerio');
 
+const svgSprites = () => {
+  return src (['app/images/svg/**/*.svg'])
+  .pipe(cheerio({
+    run: function($) {
+      $('[fill]').removeAttr('fill');      
+      $('[stroke]').removeAttr('stroke');      
+      $('[style]').removeAttr('style');      
+    },
+    parserOptions : {xmlMode: true}
+  }))
+  .pipe(replace('&gt;', '>'))
+  .pipe(svgSprite({
+    mode: {
+      stack: {
+        sprite: "../sprite.svg"
+      }
+    }
+  }))
+  .pipe(dest('app/images/'))
+}
+
+const htmlInclude = () => {
+  return src(['app/html/*.html'])
+  .pipe(fileInclude ({
+    prefix: '@',
+    basepath: '@file',
+  }))
+  .pipe(dest('app'))
+  .pipe(browserSync.stream());
+}
 
 function browsersync() {
   browserSync.init({
@@ -80,8 +114,14 @@ function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
+  watch(['app/html/**/*.html'], htmlInclude);
+  watch(['app/scss/**/*.scss']).on('change', browserSync.reload);
+  watch(['app/images/svg/**/*.svg'], svgSprites);
+  watch(['app/images/svg/*.svg']).on('change', browserSync.reload);
 }
 
+exports.svgSprites = svgSprites;
+exports.htmlInclude = htmlInclude;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.brobrowsersync = browsersync;
@@ -92,4 +132,4 @@ exports.build = build;
 exports.build = series(cleanDist, images, build);
 
 
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(styles, scripts, svgSprites, htmlInclude, browsersync, watching);
