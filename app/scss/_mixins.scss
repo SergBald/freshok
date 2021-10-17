@@ -21,7 +21,12 @@
 @mixin bg {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
+}
+
+@mixin flx {
+  display: flex;
+  justify-content: space-between;
 }
 
 @mixin max-width($width) {

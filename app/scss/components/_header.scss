@@ -2,16 +2,15 @@
   color: $white;
 
   &__top {
-    justify-content: space-between;
+    // justify-content: space-between;
     background-color: $dark-800;
-    padding: 10px 0;
+    padding: 8px 0;
   }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 6px 0;
+    @include flx;
   }
 
   &__bottom {
@@ -37,11 +36,15 @@
     background-color: $white;
     transition: background-color 0.5s;
 
-    &::before {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
-      left: 0;
       top: 50%;
+    }
+
+    &::before {
+      left: 0;
       transform: translate(60%, -50%);
       width: 24px;
       height: 20px;
@@ -49,9 +52,6 @@
     }
 
     &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
       right: 12px;
       transform: translate(7%, -50%);
       width: 8px;
