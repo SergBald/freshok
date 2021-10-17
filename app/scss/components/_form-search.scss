@@ -22,7 +22,8 @@
     background-position: left 13px center;
 
     &::placeholder {
-      color: $dark-800
+      font-weight: 400;
+      color: $dark-800;
     }
 
     &:focus {

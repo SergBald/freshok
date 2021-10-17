@@ -6,20 +6,33 @@
     margin-bottom: 50px;
     letter-spacing: 0.1em;
   }
+
+  &__filter-btn {
+
+    &:hover,
+    &:active {
+      border-bottom: 3px solid rgba($green-900, 0.2);
+    }
+  }
 }
 
 .promo-card {
   display: flex;
   height: 124px;
-  padding: 12px 12px 12px 0;
+  padding: 12px;
 
   &__img {
-    object-position: left center;
-    object-fit: fill;
+    display: block;
+    object-fit: cover;
+    margin: 0 12px 0 0;
   }
 
   &__info-box {
     position: relative;
+  }
+
+  &__title {
+    @include line-clamp(14, 1.4, 3);
   }
 
   &__status {
@@ -29,6 +42,7 @@
     font-size: 10px;
     line-height: 1;
     text-transform: uppercase;
+    @include line-clamp(10, 1, 1);
 
     &--avail {
       color: $green-900;

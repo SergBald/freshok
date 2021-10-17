@@ -2,7 +2,6 @@
   color: $white;
 
   &__top {
-    // justify-content: space-between;
     background-color: $dark-800;
     padding: 8px 0;
   }
@@ -20,6 +19,9 @@
 
   &__logo {
     margin-right: 25px;
+    &__img {
+      object-fit: cover;
+    }
   }
 
   &__catalog {
