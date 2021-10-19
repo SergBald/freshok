@@ -47,7 +47,10 @@
        <div class="container">
          <div class="header__inner">
            <a class="logo header__logo" href="#">
-             <img class="logo__img" src="images/svg/logo.svg" width="200" height="60" alt="Логотип магазина">
+             <picture class="logo__picture">
+               <source srcset="images/svg/logo-short.svg" media="(max-width: 992px)">
+               <img class="logo__img" src="images/svg/logo.svg" width="200" height="60" alt="Логотип магазина">
+             </picture>
            </a>
            <div class="header__catalog">
              <button class="header__button button" type="button">
