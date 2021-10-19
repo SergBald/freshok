@@ -2,17 +2,20 @@
   display: flex;
   justify-content: center;
 
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
   &__btn {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     color: $dark-500;
-    padding: 0;
     border-bottom: 3px solid transparent;
-
-    &:not(:last-child) {
-      margin-right: 24px;
-    }
+    transition: border-bottom 0.5s;
 
     &:hover,
     &:active {

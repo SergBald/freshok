@@ -10,12 +10,6 @@
   padding: 55px 18px 18px;
   transition: border-color 0.5s;
 
-  &__badges {
-    position: absolute;
-    left: 12px;
-    top: 12px;
-  }
-
   &__heart {
     position: absolute;
     right: 12px;
@@ -35,9 +29,19 @@
     height: 29px;
   }
 
+  &__link-img {
+    width: 298px;
+    height: 215px;
+   
+  }
+
   &__img {
     object-fit: cover;
     margin-bottom: 10px;
+
+    &:hover {
+      background: rgba($white, 0.1);
+    }
   }
 
   &__title {

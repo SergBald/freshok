@@ -37,47 +37,41 @@
              <img class="logo__img" src="images/svg/logo.svg" width="200" height="60" alt="Логотип магазина">
            </a>
            <div class="header__catalog">
-             <button class="header__button button" tupe="menu">
+             <button class="header__button button" type="button">
                Каталог продуктов
              </button>
            </div>
 
            <form class="form-search header__form">
-             <label class="form-search__label" for="name">
+             <label class="form-search__label">
                <span class="sr-only">Поиск товара в магазине</span>
-               <input class="form-search__input" type="search" id="name" name="search" placeholder="Найти в магазине..."
-                 required>
+               <input class="form-search__input" type="search" name="search" placeholder="Найти в магазине..." required>
              </label>
              <button class="form-search__btn button" type="button">поиск</button>
            </form>
 
-           <ul class="user">
-             <li class="user__item">
-               <a class="user__link" href="#"><span class="sr-only">перейти в личный кабинет</span>
-                 <svg class="user__profile user__profile--user">
-                   <use xlink:href='images/sprite.svg#icon--user'></use>
-                 </svg>
-               </a>
-             </li>
-             <li class="user__item">
-               <button class="user__btn" type="button">
-                 <span class="sr-only">перейти в избранные товары</span>
-                 <svg class="user__profile user__profile--heart">
-                   <use xlink:href='images/sprite.svg#icon--heart'></use>
-                 </svg>
-                 <span class="user__num">12</span>
-               </button>
-             </li>
-             <li class="user__item">
-               <button class="user__btn" type="button">
-                 <span class="sr-only">перейти в корзину</span>
-                 <svg class="user__profile user__profile--cart">
-                   <use xlink:href='images/sprite.svg#icon--cart'></use>
-                 </svg>
-                 <span class="user__num">12</span>
-               </button>
-             </li>
-           </ul>
+           <div class="user">
+             <a class="user__item" href="#">
+               <span class="sr-only">перейти в личный кабинет</span>
+               <svg class="user__profile user__profile--user">
+                 <use xlink:href='images/sprite.svg#icon--user'></use>
+               </svg>
+             </a>
+             <button class="user__item" type="button">
+               <span class="sr-only">перейти в избранные товары</span>
+               <svg class="user__profile user__profile--heart">
+                 <use xlink:href='images/sprite.svg#icon--heart'></use>
+               </svg>
+               <span class="user__num">12</span>
+             </button>
+             <button class="user__item" type="button">
+               <span class="sr-only">перейти в корзину</span>
+               <svg class="user__profile user__profile--cart">
+                 <use xlink:href='images/sprite.svg#icon--cart'></use>
+               </svg>
+               <span class="user__num">12</span>
+             </button>
+           </div>
          </div>
        </div>
      </div>

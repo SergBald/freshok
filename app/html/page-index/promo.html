@@ -2,46 +2,45 @@
   <div class="container">
     <h2 class="title">Акции</h2>
 
-    <ul class="filter promo__filter">
-      <li class=" filter__btn promo__filter-btn">
-        <button class="mixitup-control-active" data-filter="all" type="button">
+    <ul class="filter">
+      <li class="filter__item">
+        <button class="filter__btn promo__filter-btn" data-filter="all" type="button">
           Все товары
         </button>
       </li>
-      <li class="filter__btn promo__filter-btn">
-        <button data-filter=".category-novelty" type="button">
+      <li class="filter__item">
+        <button class="filter__btn promo__filter-btn" data-filter=".category-novelty" type="button">
           Новинки
         </button>
       </li>
-      <li class="filter__btn promo__filter-btn">
-        <button data-filter=".category-hits" type="button">
+      <li class="filter__item">
+        <button class="filter__btn promo__filter-btn" data-filter=".category-hits" type="button">
           Хиты
         </button>
       </li>
     </ul>
 
     <ul class="promo__items top-product__items">
-
       <li class="promo__item mix category-novelty">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--novelty">новинка</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/pineapple.jpg" alt="Ананас" width="100"
               height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Ананас, 1кг</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--avail">в наличии
-            </p>
+            <h3 class="product-card__title promo-card__title">
+              <a class="promo-card__link" href="#">
+                Ананас, 1кг
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--avail">в наличии
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">1999 ₽</p>
-              <p class="promo-card__price product-card__price">999 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">1999 ₽</span>
+              <span class="promo-card__price product-card__price">999 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -50,30 +49,29 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
 
       <li class="promo__item mix category-novelty">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--novelty">новинка</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/coffee.jpg" alt="Кофе Caffé Salomoni"
               width="100" height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Кофе с коноплей органический Caffé Salomoni 250г</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--endeth">заканчивается
-            </p>
+            <h3 class="product-card__title promo-card__title">
+              <a class="promo-card__link" href="#">
+                Кофе с коноплей органический Caffé Salomoni 250г
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--endeth">заканчивается
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">877 ₽</p>
-              <p class="promo-card__price product-card__price">777 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">877 ₽</span>
+              <span class="promo-card__price product-card__price">777 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -87,24 +85,24 @@
 
       <li class="promo__item mix category-novelty">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--novelty">новинка</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/strawberry.jpg" alt="" width="100"
               height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Клубника, 1 кг</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--lack">нет в наличии
-            </p>
+            <h3 class="product-card__title promo-card__title">
+              <a class="promo-card__link" href="#">
+                Клубника, 1 кг
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--lack">нет в наличии
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">600 ₽</p>
-              <p class="promo-card__price product-card__price">440 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">600 ₽</span>
+              <span class="promo-card__price product-card__price">440 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -113,30 +111,29 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
 
       <li class="promo__item mix category-novelty">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--novelty">новинка</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/mango.jpg" alt="Манго" width="100"
               height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title">Манго, 1 шт</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--avail">в наличии
-            </p>
+            <h3 class="product-card__title">
+              <a class="promo-card__link" href="#">
+                Манго, 1 шт
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--avail">в наличии
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">960 ₽</p>
-              <p class="promo-card__price product-card__price">660 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">960 ₽</span>
+              <span class="promo-card__price product-card__price">660 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -145,30 +142,28 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
 
       <li class="promo__item mix category-novelty">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--novelty">новинка</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/salmon.jpg" alt="Лосось" width="100"
               height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Лосось, 1 кг</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--avail">в наличии
-            </p>
+            <h3 class="product-card__title promo-card__title"> <a class="promo-card__link" href="#">
+                Лосось, 1 кг
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--avail">в наличии
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">1199 ₽</p>
-              <p class="promo-card__price product-card__price">999 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">1199 ₽</span>
+              <span class="promo-card__price product-card__price">999 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -177,30 +172,29 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
 
       <li class="promo__item mix category-hits">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--hit">хит</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/veg-juice.jpg" alt="Сок Granini овощной"
               width="100" height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Сок Granini овощной 100%, 0.5л</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--endeth">заканчивается
-            </p>
+            <h3 class="product-card__title promo-card__title">
+              <a class="promo-card__link" href="#">
+                Сок Granini овощной 100%, 0.5л
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--endeth">заканчивается
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">230 ₽</p>
-              <p class="promo-card__price product-card__price">180 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">230 ₽</span>
+              <span class="promo-card__price product-card__price">180 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -209,30 +203,29 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
 
       <li class="promo__item mix category-hits">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--hit">хит</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/basket.jpg" alt="Фруктовая корзина"
               width="100" height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Фруктовая корзина, 1 шт</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--avail">в наличии
-            </p>
+            <h3 class="product-card__title promo-card__title">
+              <a class="promo-card__link" href="#">
+                Фруктовая корзина, 1 шт
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--avail">в наличии
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">5990 ₽</p>
-              <p class="promo-card__price product-card__price">3990 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">5990 ₽</span>
+              <span class="promo-card__price product-card__price">3990 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -241,30 +234,29 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
 
       <li class="promo__item mix category-hits">
         <article class="promo-card product-card">
-          <div class="badges product-card__badges">
+          <div class="badges">
             <span class="badges__badge badges__badge--hit">хит</span>
           </div>
-
           <a class="promo-card__link product-card__link" href="#">
             <img class="promo-card__img product-card__img" src="images/catalog/meat.jpg" alt="Свинина мякоть"
               width="100" height="100">
           </a>
-
           <div class="promo-card__info-box">
-            <a class="promo-card__link" href="#">
-              <h3 class="product-card__title promo-card__title">Свинина мякоть, 1 кг</h3>
-            </a>
-            <p class="promo-card__status promo-card__status--avail">в наличии
-            </p>
+            <h3 class="product-card__title promo-card__title">
+              <a class="promo-card__link" href="#">
+                Свинина мякоть, 1 кг
+              </a>
+            </h3>
+            <span class="promo-card__status promo-card__status--avail">в наличии
+            </span>
             <div class="promo-card__prices product-card__prices">
-              <p class="promo-card__price promo-card__price--old product-card__price--old">599 ₽</p>
-              <p class="promo-card__price product-card__price">499 ₽</p>
+              <span class="promo-card__price promo-card__price--old product-card__price--old">599 ₽</span>
+              <span class="promo-card__price product-card__price">499 ₽</span>
             </div>
           </div>
           <span class="promo-card__rating">
@@ -273,13 +265,10 @@
               <use xlink:href='images/sprite.svg#icon--star'></use>
             </svg>
           </span>
-
         </article>
       </li>
-
     </ul>
-    <a class="button" href="#">Показать еще</a>
-  </div>
 
+    <button class="button promo__btn" type="button">Показать еще</button>
   </div>
 </section>
