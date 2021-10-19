@@ -17,11 +17,14 @@
     padding: 20px 0;
   }
 
-  &__logo {
-    margin-right: 25px;
+  .logo {
     &__img {
       object-fit: cover;
     }
+  }
+
+  &__logo {
+    margin-right: 25px;
   }
 
   &__catalog {
@@ -34,7 +37,6 @@
     font-weight: 600;
     color: $green-900;
     padding: 14px 41px 14px 59px;
-    background-repeat: no-repeat;
     background-color: $white;
     transition: background-color 0.5s;
 
@@ -43,6 +45,7 @@
       content: '';
       position: absolute;
       top: 50%;
+      @include bg;
     }
 
     &::before {
@@ -51,6 +54,7 @@
       width: 24px;
       height: 20px;
       background-image: url('../images/svg/icon/burger.svg');
+      
     }
 
     &::after {
