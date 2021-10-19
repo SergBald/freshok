@@ -21,23 +21,31 @@
   height: 124px;
   padding: 12px;
 
-  &__img {
-    display: block;
-    object-fit: cover;
+  &__link-img {
+    flex: none;
     margin: 0 12px 0 0;
+  }
+
+  &__img {
+    object-fit: cover;
   }
 
   &__info-box {
     position: relative;
+    flex-direction: column;
+    @include flx;
   }
 
   &__title {
+    flex: 1 auto;
+  }
+
+  &__link {
     @include line-clamp(14, 1.4, 3);
   }
 
   &__status {
-    position: absolute;
-    left: 0;
+    
     bottom: 24px;
     font-size: 10px;
     line-height: 1;
@@ -58,18 +66,13 @@
   }
 
   &__prices {
-    flex-direction: row-reverse;
-    width: max-content;
-    align-items: baseline;
-    left: 50%;
-    bottom: -3px;
-    transform: translate(-39%);
+    position: relative;   
   }
 
   &__price {
     font-size: 20px;
     line-height: 1;
-    margin-right: 10px;
+    margin-right: 12px;
   
     &--old {
       font-size: 12px;
