@@ -13,6 +13,11 @@ $(function () {
     autoplay: true,
   });
 
+   $('.filters-category__btn').on('click', function () {
+     $('.filters-category__btn, .filters-category__list').toggleClass('active');
+
+   });
+
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
@@ -24,4 +29,5 @@ $(function () {
 
   var mixer1 = mixitup(containerEl1,config);
   var mixer2 = mixitup(containerEl2,config);
+
 });

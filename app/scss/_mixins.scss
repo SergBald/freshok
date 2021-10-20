@@ -29,6 +29,11 @@
   justify-content: space-between;
 }
 
+@mixin bdr {
+  border: 1px solid $silver-600;
+  border-radius: $b-radius;
+}
+
 @mixin max-width($width) {
   @media only screen and (max-width: $width+ "px") {
     @content;
