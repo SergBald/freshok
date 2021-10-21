@@ -1,0 +1,41 @@
+.top {
+  background-color: $silver-100;
+  padding: 24px 0;
+}
+
+.breadcrumbs {
+  font-weight: 400;
+  line-height: 1.2;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    color: $dark-500;
+    margin-right: 16px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/svg/icon/chevron-right.svg');
+      width: 6px;
+      height: 10px;
+      top: 3px;
+      right: -11px;
+    }
+
+    &:last-child {
+      color: $green-900;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    color: inherit;
+  }
+}

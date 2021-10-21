@@ -25,6 +25,15 @@ $(function () {
     $('.filters-brand__btn, .filters-brand__list').toggleClass('active');
   });
 
+
+  $('.catalog-content__btn').on('click', function () {
+    $('.catalog-content__btn').removeClass('catalog-content__btn--active');
+      $(this).addClass('catalog-content__btn--active');
+  });
+
+  $('.select-style').styler();
+  
+
   new SimpleBar(document.querySelector('.filters-category__list'), {
     autoHide: false,
     scrollbarMaxSize: 129,
