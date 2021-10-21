@@ -13,10 +13,22 @@ $(function () {
     autoplay: true,
   });
 
-   $('.filters-category__btn').on('click', function () {
-     $('.filters-category__btn, .filters-category__list').toggleClass('active');
+  $('.filters-category__btn').on('click', function () {
+    $('.filters-category__btn, .filters-category__list').toggleClass('active');
+  });
 
-   });
+  $('.filters-offer__btn').on('click', function () {
+    $('.filters-offer__btn, .filters-offer__list').toggleClass('active');
+  });
+
+  $('.filters-brand__btn').on('click', function () {
+    $('.filters-brand__btn, .filters-brand__list').toggleClass('active');
+  });
+
+  new SimpleBar(document.querySelector('.filters-category__list'), {
+    autoHide: false,
+    scrollbarMaxSize: 129,
+  });
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
@@ -27,7 +39,6 @@ $(function () {
     }
   };
 
-  var mixer1 = mixitup(containerEl1,config);
-  var mixer2 = mixitup(containerEl2,config);
-
+  var mixer1 = mixitup(containerEl1, config);
+  var mixer2 = mixitup(containerEl2, config);
 });
