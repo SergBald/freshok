@@ -25,6 +25,65 @@ $(function () {
     $('.filters-brand__btn, .filters-brand__list').toggleClass('active');
   });
 
+  $('.filters-price__btn').on('click', function () {
+    $('.filters-price__btn, .filters-price__list').toggleClass('active');
+  });
+
+
+  var $range = $(".filters-price__input"),
+      $inputFrom = $(".filters-price__valeu-from"),
+      $inputTo = $(".filters-price__valeu-to"),
+      instance,
+      min = $(['data-min']),
+      max = $(['data-max']),
+      from = 0,
+      to = 0;
+
+  $range.ionRangeSlider({
+    type: "double",
+    onStart: updateInputs,
+    onChange: updateInputs
+  });
+  instance = $range.data("ionRangeSlider");
+
+  function updateInputs(data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);
+  }
+
+  $inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+    } else if (val > to) {
+      val = to;
+    }
+
+    instance.update({
+      from: val
+    });
+  });
+
+  $inputTo.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+      val = from;
+    } else if (val > max) {
+      val = max;
+    }
+
+    instance.update({
+      to: val
+    });
+  });
+
 
   $('.catalog-content__btn').on('click', function () {
     $('.catalog-content__btn').removeClass('catalog-content__btn--active');

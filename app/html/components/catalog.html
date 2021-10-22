@@ -72,7 +72,7 @@
           </form>
         </div>
 
-        <div class="filters__item filters-brand">
+        <div class="filters__item filters-brend">
           <button class="filters__btn filters-brand__btn" type="button">Бренд</button>
           <form class="filters__list filters-brand__list" action="#">
             <ul class="filters__list-items">
@@ -121,19 +121,43 @@
             </ul>
           </form>
         </div>
+
+        <div class="filters__item filters-price">
+          <button class="filters__btn filters-price__btn" type="button">Цена</button>
+          <form class="filters__list filters-price__list" action="#">
+            <label class="filters-price__valeus">
+              <span class="filters-price__valeu-text">от</span>
+              <input class="filters-price__valeu filters-price__valeu-from" type="text"
+                aria-label="введите стоимость минимальную товара">
+              <span class="filters-price__valeu-currency">₽</span>
+              <span class="filters-price__valeu-text">до</span>
+              <input class="filters-price__valeu filters-price__valeu-to" type="text"
+                aria-label="введите стоимость максимальную товара">
+              <span class="filters-price__valeu-currency">₽</span>
+            </label>
+
+            <label class="filters-price__label">
+              <input class="filters-price__input" type="text" data-min="0" data-max="1300" data-from="100"
+                data-to="1000">
+            </label>
+
+          </form>
+        </div>
+
+
       </div>
 
       <div class="catalog-content">
         <div class="catalog-content__filter">
           <form class="catalog-content__filter-form" action="#">
-            <select class="catalog-content__filter-sort select-style">
+            <select class="catalog-content__filter-select select-style">
               <option value="">По названию</option>
               <option value="">По популярности</option>
               <option value="">Сначала дешевые</option>
               <option value="">Сначала дорогие</option>
               <option value="">По алфавиту</option>
             </select>
-            <select class="catalog-content__filter-view select-style">
+            <select class="catalog-content__filter-select select-style">
               <option value="">по 12</option>
               <option value="">по 18</option>
               <option value="">по 24</option>

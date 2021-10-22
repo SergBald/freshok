@@ -1,0 +1,205 @@
+.filters {
+
+  &__item {
+    border: 1px solid $silver-600;
+    border-radius: $b-radius;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;
+    color: $dark-900;
+    padding: 18px;
+    border-bottom: 1px solid $silver-600;
+    @extend %ruda;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 10px;
+      background-image: url('../images/svg/icon/chevron-up.svg');
+      @include bg;
+    }
+
+    &.active {
+      border-bottom: none;
+
+      &::after {
+        content: '';
+        transform: rotate(180deg);
+        top: 45%;
+      }
+    }
+  }
+
+  .filters-category__list {
+    max-height: 290px;
+  }
+
+  .filters__list {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: $dark-500;
+    padding: 12px 18px;
+  }
+
+  &__list-item {
+    padding: 6px 0;
+    cursor: pointer;
+
+    &:hover {
+      .filters__checkbox {
+        border-color: $dark-500;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+  }
+
+  .filters-category__list.active,
+  .filters-offer__list.active,
+  .filters-brand__list.active,
+  .filters-price__list.active {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    cursor: pointer;
+  }
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.filters__checkbox {
+      border: 1px solid $dark-500;
+      background-image: url('../images/svg/icon/check.svg');
+      @include bg;
+      background-size: 12px 8px;
+    }
+  }
+
+  &__checkbox {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    @include bdr;
+
+    &:hover {
+      border-color: $dark-500;
+    }
+  }
+}
+
+.filters-price {
+
+  &__valeus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+    color: $silver-600;
+    margin: 10px 0 32px 0;
+  }
+
+  &__valeu {
+    display: block;
+    max-width: 80px;
+    margin: 0 6px;
+    font-weight: 400;
+    padding: 12px;
+    text-align: center;
+    color: $dark-500;
+    background-color: $silver-100;
+    @include bdr;
+
+    &:focus {
+      box-shadow: 0 0 0 3px $green-200;
+    }
+  }
+
+  &__valeu-text {
+    line-height: 1.2;
+  }
+
+  &__valeu-currency {
+    @extend %ruda;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 4px;
+}
+
+.simplebar-scrollbar::before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 3px;
+  background-color: $dark-400;
+}
+
+.irs--flat {
+  height: 20px;
+}
+
+.irs--flat .irs-line {
+  top: 8px;
+  height: 2px;
+  background-color: $dark-400;
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: 8px;
+  height: 2px;
+  background-color: $green-900;
+}
+
+.irs--flat .irs-handle {
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $green-900;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs-from,
+.irs-to,
+.irs-max,
+.irs-min,
+.irs-single {
+  display: none;
+}

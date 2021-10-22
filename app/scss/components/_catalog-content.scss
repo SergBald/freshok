@@ -1,0 +1,123 @@
+.catalog-content {
+
+  &__filter {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  &__btn {
+    width: 47px;
+    height: 47px;
+    @include bg;
+
+    &--list {
+      margin-right: 15px;
+    }
+
+    &.catalog-content__btn--active {
+      path {
+        fill: $green-900;
+      }
+    }
+  }
+
+  &__filter-select {
+    margin-right: 15px;
+  }
+}
+
+.jq-selectbox {
+
+  &__select {
+    height: auto;
+    width: 100%;
+    padding: 15px 20px 15px 11px;
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: 400;
+    line-height: 1.2;
+    color: $dark-500;
+    margin-right: 15px;
+    @include bdr;
+    @extend %opensans;
+
+    &:hover {
+      background: transparent;
+    }
+
+    &:active {
+      border-color: $dark-500;
+      border-radius: 3px 3px 0 0;
+      box-shadow: none;
+    }
+  }
+
+  &__trigger {
+    border-left: none;
+  }
+
+  &__trigger-arrow {
+    position: absolute;
+    top: 49%;
+    right: 20px;
+    width: 10px;
+    height: 6px;
+    border: none;
+    fill: $silver-600;
+    background-image: url('../images/svg/icon/chevron-up.svg');
+    transform: rotate(180deg);
+    @include bg;
+  }
+
+  &.opened &__trigger-arrow {
+    transform: rotate(180deg);
+  }
+
+  &.focused &__select {
+    border-color: $silver-600;
+    box-shadow: 0 0 0 3px $green-200;
+  }
+
+  &.opened &__select {
+    border-color: $dark-500;
+    border-radius: 3px 3px 0 0;
+  }
+
+  &.dropdown &__select {
+    box-shadow: none;
+  }
+
+  &__dropdown {
+    margin: 0;
+    padding: 0;
+    border: 1px solid $silver-600;
+    border-radius: 0 0 3px 3px;
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    @extend %opensans;
+  }
+
+  &.dropdown &__trigger-arrow {
+    transform: rotate(360deg);
+  }
+
+  & li {
+    &.selected {
+      background-color: transparent;
+      color: $dark-500;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $dark-500;
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px $green-200;
+  }
+}
