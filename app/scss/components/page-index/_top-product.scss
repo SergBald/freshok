@@ -8,6 +8,10 @@
     margin-top: 50px;
   }
 
+  &__item{
+    max-width: 300px;
+  }
+
   &__btn {
     color: $green-900;
     background-color: $white;

@@ -18,6 +18,7 @@
 
 .promo-card {
   display: flex;
+  flex-direction: inherit;
   height: 124px;
   padding: 12px;
 
@@ -45,7 +46,6 @@
   }
 
   &__status {
-    
     bottom: 24px;
     font-size: 10px;
     line-height: 1;
@@ -86,6 +86,7 @@
 
   &__rating {
     position: absolute;
+    height: max-content;
     right: 12px;
     bottom: 12px;
     display: flex;
@@ -97,5 +98,6 @@
     width: 16px;
     height: 16px;
     fill: $yellow-900;
+    margin-left: 3px;
   }
 }

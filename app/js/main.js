@@ -90,8 +90,15 @@ $(function () {
       $(this).addClass('catalog-content__btn--active');
   });
 
+  $('.catalog-content__btn--list').on('click', function () {
+    $('.catalog-content__items').addClass('catalog-content__items--list');
+  });
+
+  $('.catalog-content__btn--grid').on('click', function () {
+    $('.catalog-content__items').removeClass('catalog-content__items--list');
+  });
+
   $('.select-style').styler();
-  
 
   new SimpleBar(document.querySelector('.filters-category__list'), {
     autoHide: false,
