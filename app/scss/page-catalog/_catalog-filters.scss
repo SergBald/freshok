@@ -73,10 +73,7 @@
     width: 100%;
   }
 
-  .filters-category__list.active,
-  .filters-offer__list.active,
-  .filters-brand__list.active,
-  .filters-price__list.active {
+  .filters__list.active {
     display: none;
   }
 

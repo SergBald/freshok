@@ -13,6 +13,10 @@ $(function () {
     autoplay: true,
   });
 
+  // var = $filters-btn = $('.filters__btn');
+  // $filters-btn').on('click', function () {
+  //   $('.this').toggleClass('active');
+  // });
   $('.filters-category__btn').on('click', function () {
     $('.filters-category__btn, .filters-category__list').toggleClass('active');
   });
