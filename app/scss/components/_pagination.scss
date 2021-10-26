@@ -1,0 +1,52 @@
+.pagination {
+  @include flx;
+  padding: 1.5px 0;
+
+  &__link,
+  &__arrow {
+    padding: 15px 19px;
+    background-color: $silver-100;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: border-color 0.5s;
+
+    &:hover {
+      border-color: $silver-600;
+    }
+
+    &:active {
+      border-color: $dark-500;
+    }
+    
+    &--prev {
+      margin-right: 6px;
+    }
+  }
+
+  &__arrow-img {
+    display: inherit;
+    width: 10.5px;
+    height: 18px;
+    fill: $dark-500;
+  }
+
+  &__list {
+    @include flx;
+  }
+
+  &__item {
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    margin-right: 6px;
+  }
+
+  &__link {
+    padding: 15px 19px;
+    
+    &--dots {
+      padding: 15px 16px;
+    }
+  }
+}
