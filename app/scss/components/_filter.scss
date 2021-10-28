@@ -2,19 +2,24 @@
   display: flex;
   justify-content: center;
 
-  &__btn {
-    font-size: 15px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $dark-500;
-    padding: 0;
+  &__item {
 
     &:not(:last-child) {
       margin-right: 24px;
     }
   }
-}
 
-.mixitup-control-active {
-  border-bottom: 3px solid $green-200;
+  &__btn {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark-500;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.5s;
+
+    &:hover,
+    &:active {
+      border-bottom: 3px solid $green-200;
+    }
+  }
 }

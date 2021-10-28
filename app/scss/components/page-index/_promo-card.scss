@@ -2,33 +2,55 @@
   text-align: center;
   background-color: $silver-300;
 
-  &__filter {
-    margin-bottom: 50px;
+  &__filter-btn {
     letter-spacing: 0.1em;
+    
+    &:hover,
+    &:active {
+      border-bottom: 3px solid rgba($green-900, 0.2);
+    }
+  }
+
+  &__btn {
+    margin-top: 48px;
   }
 }
 
 .promo-card {
   display: flex;
+  flex-direction: inherit;
   height: 124px;
-  padding: 12px 12px 12px 0;
+  padding: 12px;
+
+  &__link-img {
+    flex: none;
+    margin: 0 12px 0 0;
+  }
 
   &__img {
-    object-position: left center;
-    object-fit: fill;
+    object-fit: cover;
   }
 
   &__info-box {
     position: relative;
+    flex-direction: column;
+    @include flx;
+  }
+
+  &__title {
+    flex: 1 auto;
+  }
+
+  &__link {
+    @include line-clamp(14, 1.4, 3);
   }
 
   &__status {
-    position: absolute;
-    left: 0;
     bottom: 24px;
     font-size: 10px;
     line-height: 1;
     text-transform: uppercase;
+    @include line-clamp(10, 1, 1);
 
     &--avail {
       color: $green-900;
@@ -44,27 +66,27 @@
   }
 
   &__prices {
-    flex-direction: row-reverse;
-    width: max-content;
-    align-items: baseline;
-    left: 50%;
-    bottom: -3px;
-    transform: translate(-39%);
+    position: relative;   
   }
 
   &__price {
     font-size: 20px;
     line-height: 1;
-    margin-right: 10px;
-  }
+    margin-right: 12px;
 
-  &__price--old {
-    font-size: 12px;
-    color: $silver-600;
+    &--currency {
+      font-size: 14px;
+    }
+  
+    &--old {
+      font-size: 12px;
+      color: $silver-600;
+    }
   }
 
   &__rating {
     position: absolute;
+    height: max-content;
     right: 12px;
     bottom: 12px;
     display: flex;
@@ -76,5 +98,6 @@
     width: 16px;
     height: 16px;
     fill: $yellow-900;
+    margin-left: 3px;
   }
 }

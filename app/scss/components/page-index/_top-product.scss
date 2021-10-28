@@ -1,25 +1,22 @@
 .top-product {
   text-align: center;
 
-  &__title {
-    margin-bottom: 27px;
-  }
-
-  &__filter {
-    margin-bottom: 50px;
-  }
-
   &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px 30px;
-    margin-bottom: 45px;
+    margin-top: 50px;
+  }
+
+  &__item{
+    max-width: 300px;
   }
 
   &__btn {
     color: $green-900;
     background-color: $white;
     border: 1px solid $green-900;
+    margin-top: 48px;
 
     &:focus {
       background-color: $white;

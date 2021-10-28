@@ -7,11 +7,15 @@
   &__item {
     width: 32px;
     height: 32px;
+    transition: opacity 0.5s;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
 
     &:hover,
     &:active {
       opacity: 0.5;
-      transition: opacity 0.5s;
     }
   }
 
@@ -20,5 +24,6 @@
     width: 100%;
     height: 100%;
     @include bg;
+    background-size: contain;
   }
 }

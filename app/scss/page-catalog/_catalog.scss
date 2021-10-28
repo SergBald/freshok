@@ -1,0 +1,26 @@
+.catalog {
+
+  &__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    padding: 48px 0;
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 72px;
+  }
+
+  &__filters {
+    max-width: 300px;
+    width: 100%;
+    margin-right: 30px;
+    flex: none;
+  }
+}
+
+
+

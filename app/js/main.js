@@ -8,18 +8,115 @@ $(function () {
   $('.brands__slider').slick({
     arrows: false,
     slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToScroll: 1,
+    initialSlide: true,
+    autoplay: true,
   });
 
+ 
+  $('.filters-category__btn').on('click', function () {
+    $('.filters-category__btn, .filters-category__list').toggleClass('active');
+  });
+
+  $('.filters-offer__btn').on('click', function () {
+    $('.filters-offer__btn, .filters-offer__list').toggleClass('active');
+  });
+
+  $('.filters-brand__btn').on('click', function () {
+    $('.filters-brand__btn, .filters-brand__list').toggleClass('active');
+  });
+
+  $('.filters-price__btn').on('click', function () {
+    $('.filters-price__btn, .filters-price__list').toggleClass('active');
+  });
+
+
+  var $range = $(".filters-price__input"),
+      $inputFrom = $(".filters-price__valeu-from"),
+      $inputTo = $(".filters-price__valeu-to"),
+      instance,
+      min = $(['data-min']),
+      max = $(['data-max']),
+      from = 0,
+      to = 0;
+
+  $range.ionRangeSlider({
+    type: "double",
+    onStart: updateInputs,
+    onChange: updateInputs
+  });
+  instance = $range.data("ionRangeSlider");
+
+  function updateInputs(data) {
+    from = data.from;
+    to = data.to;
+
+    $inputFrom.prop("value", from);
+    $inputTo.prop("value", to);
+  }
+
+  $inputFrom.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < min) {
+      val = min;
+    } else if (val > to) {
+      val = to;
+    }
+
+    instance.update({
+      from: val
+    });
+  });
+
+  $inputTo.on("input", function () {
+    var val = $(this).prop("value");
+
+    // validate
+    if (val < from) {
+      val = from;
+    } else if (val > max) {
+      val = max;
+    }
+
+    instance.update({
+      to: val
+    });
+  });
+
+
+  $('.catalog-content__btn').on('click', function () {
+    $('.catalog-content__btn').removeClass('catalog-content__btn--active');
+      $(this).addClass('catalog-content__btn--active');
+  });
+
+  $('.catalog-content__btn--list').on('click', function () {
+    $('.catalog-content__items').addClass('catalog-content__items--list');
+  });
+
+  $('.catalog-content__btn--grid').on('click', function () {
+    $('.catalog-content__items').removeClass('catalog-content__items--list');
+  });
+
+  $('.select-style').styler();
+
+  new SimpleBar(document.querySelector('.filters-category__list'), {
+    autoHide: false,
+    scrollbarMaxSize: 129,
+  });
+});
+
+$(function () {
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
-  var config = {
-    controls: {
-      scope: 'local'
-    }
-  };
+    var config = {
+      controls: {
+        scope: 'local'
+      }
+    };
 
-  var mixer1 = mixitup(containerEl1,config);
-  var mixer2 = mixitup(containerEl2,config);
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer2 = mixitup(containerEl2, config);
 });

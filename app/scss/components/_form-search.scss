@@ -1,12 +1,11 @@
 .form-search {
   max-width: 576px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   border-radius: $b-radius;
+  @include flx;
 
   &__label {
-    width: 100%;
+    flex: 1;
   }
 
   &__input {
@@ -23,7 +22,8 @@
     background-position: left 13px center;
 
     &::placeholder {
-      color: $dark-800
+      font-weight: 400;
+      color: $dark-800;
     }
 
     &:focus {
@@ -36,14 +36,13 @@
   }
 
   &__btn {
-    max-width: 157px;
-    width: 100%;
-    color: $white;
+    padding: 13px 50px;
     font-size: 14px;
     line-height: 1.4;
     letter-spacing: 0.03em;
     font-weight: 600;
     text-transform: uppercase;
+    color: $white;
     background-color: $dark-800;
     border-radius: 0 6px 6px 0;
 
