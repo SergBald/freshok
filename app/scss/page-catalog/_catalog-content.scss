@@ -46,7 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 18px;
+    margin-bottom: 13px;
 
     &.catalog-content__items--list {
       .product-card {
@@ -85,6 +85,10 @@
           right: 18px;
         }
       }
+
+      .promo-card__status {
+          margin: 3px 0 19px 0;
+        }
 
       .catalog-content__item {
         flex: 0 1 466px;

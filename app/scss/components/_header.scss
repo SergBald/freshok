@@ -54,7 +54,6 @@
       width: 24px;
       height: 20px;
       background-image: url('../images/svg/icon/burger.svg');
-      
     }
 
     &::after {
@@ -73,6 +72,7 @@
     &:active {
       background-color: $green-200;
       border-radius: 6px 6px 0 0;
+      color: $green-900;
     }
 
     &:hover::after {

@@ -96,7 +96,7 @@
 
  <main>
 
-   <section class="top">
+  <section class="top">
   <h2 class="sr-only">навигация по страницам сайта</h2>
   <div class="container">
     <div class="breadcrumbs">
@@ -115,11 +115,11 @@
     </div>
   </div>
 </section>
-   <section class="catalog">
+  <section class="catalog">
   <div class="container">
     <h2 class="title catalog__title">Каталог товаров</h2>
     <div class="catalog__inner">
-   <div class="filters catalog__filters">
+  <div class="filters catalog__filters">
   <div class="filters__item filters-category">
     <button class="filters__btn filters-category__btn" type="button">Категории</button>
     <ul class="filters__list filters-category__list">
@@ -241,24 +241,27 @@
   <div class="filters__item filters-price">
     <button class="filters__btn filters-price__btn" type="button">Цена</button>
     <form class="filters__list filters-price__list" action="#">
-      <label class="filters-price__valeus">
-        <span class="filters-price__valeu-text">от</span>
-        <input class="filters-price__valeu filters-price__valeu-from" type="text"
-          aria-label="введите стоимость минимальную товара">
-        <span class="filters-price__valeu-currency">₽</span>
-        <span class="filters-price__valeu-text">до</span>
-        <input class="filters-price__valeu filters-price__valeu-to" type="text"
-          aria-label="введите стоимость максимальную товара">
-        <span class="filters-price__valeu-currency">₽</span>
-      </label>
+      <div class="filters-price__valeus">
+        <label class="filters-price__labels">
+          <span class="filters-price__valeu-text">от</span>
+          <input class="filters-price__valeu filters-price__valeu-from" type="text"
+            aria-label="введите стоимость минимальную товара">
+          <span class="filters-price__valeu-currency">₽</span>
+        </label>
+        <label class="filters-price__labels">
+          <span class="filters-price__valeu-text">до</span>
+          <input class="filters-price__valeu filters-price__valeu-to" type="text"
+            aria-label="введите стоимость максимальную товара">
+          <span class="filters-price__valeu-currency">₽</span>
+        </label>
+      </div>
       <label class="filters-price__label">
-        <input class="filters-price__input" type="text" data-min="0" data-max="1300" data-from="100"
-          data-to="1000">
+        <input class="filters-price__input" type="text" data-min="0" data-max="1100" data-from="100" data-to="1000">
       </label>
     </form>
   </div>
 </div>
-   <div class="catalog-content">
+  <div class="catalog-content">
   <div class="catalog-content__filter">
     <form class="catalog-content__filter-form" action="#">
       <select class="catalog-content__filter-select select-style">
@@ -298,7 +301,6 @@
           d="M16.4 6H8.6C7.16406 6 6 6.6268 6 7.4V11.6C6 12.3732 7.16406 13 8.6 13H16.4C17.8359 13 19 12.3732 19 11.6V7.4C19 6.6268 17.8359 6 16.4 6Z"
           fill="#C1C1C1" />
       </svg>
-
     </button>
     <button class="catalog-content__btn catalog-content__btn--grid catalog-content__btn--active " type="button">
       <svg width="47" height="47" viewBox="0 0 47 47">
@@ -331,7 +333,6 @@
           d="M40.3778 6H35.8444C35.0099 6 34.3333 6.67655 34.3333 7.51111V12.0444C34.3333 12.879 35.0099 13.5556 35.8444 13.5556H40.3778C41.2123 13.5556 41.8889 12.879 41.8889 12.0444V7.51111C41.8889 6.67655 41.2123 6 40.3778 6Z"
           fill="#C1C1C1" />
       </svg>
-
     </button>
   </div>
 
@@ -820,7 +821,7 @@
       </li>
     </ul>
 
-   <div class="catalog-content__bottom">
+  <div class="catalog-content__bottom">
   <button class="button" type="button">Показать еще</button>
   <div class="pagination">
   <a class="pagination__arrow pagination__arrow--prev" href="#">
@@ -854,12 +855,12 @@
   </a>
 </div>
 </div>
-
+</div>
 </div>
 </div>
 </div>
 </section>
-   <section class="advant">
+  <section class="advant">
   <div class="container">
     <h2 class="sr-only">Преимущества</h2>
 
@@ -989,8 +990,7 @@
      </div>
    </div>
  </footer>
-   </div>
+ </div>
   <script src="js/main.min.js"></script>
-  </body>
-
-  </html>
+</body>
+</html>

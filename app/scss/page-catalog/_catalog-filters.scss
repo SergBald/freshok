@@ -112,10 +112,19 @@
 
 .filters-price {
 
+  &__labels {
+    display: flex;
+    align-items: baseline;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
   &__valeus {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
     font-size: 16px;
     line-height: 1;
     color: $silver-600;

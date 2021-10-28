@@ -2,8 +2,7 @@
   @include flx;
   padding: 1.5px 0;
 
-  &__link,
-  &__arrow {
+  &__link {
     padding: 15px 19px;
     background-color: $silver-100;
     border: 1px solid transparent;
@@ -18,7 +17,20 @@
     &:active {
       border-color: $dark-500;
     }
-    
+  }
+
+  &__arrow {
+    padding: 15px 19px;
+    background-color: $silver-100;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    transition: border-color 0.5s;
+
+    &:hover,
+    &:active {
+      fill: $dark-500;
+    }
+
     &--prev {
       margin-right: 6px;
     }
@@ -28,7 +40,11 @@
     display: inherit;
     width: 10.5px;
     height: 18px;
-    fill: $dark-500;
+    fill: $silver-600;
+
+    &:active {
+      fill: $dark-500;
+    }
   }
 
   &__list {
