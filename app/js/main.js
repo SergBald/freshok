@@ -105,6 +105,11 @@ $(function () {
     autoHide: false,
     scrollbarMaxSize: 129,
   });
+
+  $('.product__star').rateYo({
+    starWidth: "30px",
+    normalFill: "#c1c1c1",
+  });
 });
 
 $(function () {
