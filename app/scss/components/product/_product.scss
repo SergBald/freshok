@@ -46,40 +46,44 @@
 
 .product-content {
 
-//   /* .product-content__info */
+  //   /* .product-content__info */
+  &__inner {
+    @include flx;
+  }
 
-   &__info-box {
-     display: flex;
-   }
+  &__info-box {
+    display: flex;
+  }
+  
+  &__code {
+    margin-right: 15px;
+  }
 
-   &__inner {
-     @include flx;
-   }
+  &__status {
+    font-size: 16px;
+    
+  }
 
-//   /* .product-content__code */
+  //   /* .product-content__rating */
 
-//   &__code {}
+  // &__star {
+  // }
 
-//   /* .product-content__rating */
+  //   &__rating {}
 
-// &__star {
-// }
+  //   /* .product-content__prices */
 
-//   &__rating {}
+  //   &__prices {}
 
-//   /* .product-content__prices */
+  //   /* .product-content__form */
 
-//   &__prices {}
+  //   &__form {}
 
-//   /* .product-content__form */
+  //   /* .product-content__label */
 
-//   &__form {}
+  //   &__label {}
 
-//   /* .product-content__label */
+  //   /* .product-content__input */
 
-//   &__label {}
-
-//   /* .product-content__input */
-
-//   &__input {}
+  //   &__input {}
 }

@@ -107,8 +107,9 @@ $(function () {
   });
 
   $('.product__star').rateYo({
-    starWidth: "30px",
+    starWidth: "16px",
     normalFill: "#c1c1c1",
+    ratedFill: "ffb800",
   });
 });
 
