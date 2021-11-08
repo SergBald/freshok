@@ -99,7 +99,7 @@ $(function () {
     $('.catalog-content__items').removeClass('catalog-content__items--list');
   });
 
-  $('.select-style').styler();
+  $('.select-style, .product-content__input').styler();
 
   new SimpleBar(document.querySelector('.filters-category__list'), {
     autoHide: false,
