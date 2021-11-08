@@ -32,3 +32,10 @@ $sm: 576px;
 %ruda {
   font-family: 'Ruda', sans-serif;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
