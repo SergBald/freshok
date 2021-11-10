@@ -1,0 +1,27 @@
+.delivery {
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $dark-900;
+    @extend %ruda;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid $silver-600;
+  }
+  
+  &__text {
+    line-height: 1.6;
+    color: $dark-500;
+
+    &:last-child {
+      margin-bottom: 18px;
+    }
+  }
+
+   &__link {
+     line-height: 1.2;
+     color: $green-900;
+   }
+}

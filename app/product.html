@@ -128,73 +128,70 @@
       <div class="product__inner">
 
         <ul class="product__slide top-slider__inner">
-          <li class="product-slide__item">
-            <img class="product-slide__img" src="images/product/dragon-fruit.jpg" alt="Питахайя" width="420"
-              height="420">
+          <li class="product-slide__item" >
+            <a class="product-slide__modal" data-fancybox="galery" href="images/product/dragon-fruit.jpg">
+              <img class="product-slide__img" src="images/product/dragon-fruit.jpg" alt="Питахайя" width="420" height="420">
+            </a>
           </li>
           <li class="product-slide__item">
-            <img class="product-slide__img" src="images/product/dragon-fruit.jpg" alt="Питахайя" width="420"
-              height="420">
+            <a class="product-slide__modal" data-fancybox="galery" href="images/product/dragon-fruit.jpg">
+              <img class="product-slide__img" src="images/product/dragon-fruit.jpg" alt="Питахайя" width="420" height="420">
+            </a>
           </li>
         </ul>
 
         <div class="product__content">
           <article class="product-content__info">
-            <h3 class="product-card__title">Питахайя красная с белой мякотью</h3>
-            <div class="badges product__badges">
+            <h3 class="product-content__title product-card__title">Питахайя красная с белой мякотью</h3>
+            <div class="product-content__badges badges ">
               <span class="badges__badge badges__badge--hit">хит</span>
             </div>
             <div class="product-content__inner">
               <div class="product-content__info-box">
-              <span class="product-content__code">Код: 0111111</span>
-              <div class="product__star" data-rateyo-rating="4.5">
-
-                <svg class="promo-card__star">
-                  <use xlink:href='images/sprite.svg#icon--star'></use>
-                </svg>
-              </div></div>
-              <span class="promo-card__status promo-card__status--avail">в наличии</span>
+                <span class="product-content__code">Код: 0111111</span>
+                <div class="product__star"></div>
+              </div>
+              <span class="product-content__status promo-card__status promo-card__status--avail">в наличии</span>
+            </div>
+            <div class="product-content__prices product-card__prices">
+              <span class="product-content__price--old product-card__price product-card__price--old">299 ₽</span>
+              <span class="product-content__price product-card__price">199 ₽</span>
             </div>
 
-            <div class="product-card__prices product-content__prices">
-              <span class="product-card__price product-card__price--old">299 ₽</span>
-              <span class="product-card__price">199 ₽</span>
-            </div>
             <form class="product-content__form" action="#">
               <label class="product-content__label">
-                <input class="product-content__input" type="number">
+                <input class="product-content__input" type="number" value="1" min="1">
               </label>
+              <button class="product-content__btn button" type="button">
+                <svg class="product-content__btn--cart product-card__btn--cart">
+                  <use xlink:href='images/sprite.svg#icon--cart'></use>
+                </svg>
+                добавить в корзину
+              </button>
+              <button class="product-card__heart" type="button">
+                <span class="sr-only">добавить в избранные товары</span>
+                <svg class="product-content__heart product-card__ico">
+                  <use xlink:href='images/sprite.svg#icon--heart'></use>
+                </svg>
+              </button>
             </form>
-            <button class="product-card__btn button" type="button">
-              <svg class="product-card__btn--cart">
-                <use xlink:href='images/sprite.svg#icon--cart'></use>
-              </svg>
-              добавить в корзину
-            </button>
-
-            <button class="product-card__heart" type="button">
-              <span class="sr-only">добавить в избранные товары</span>
-              <svg class="product-card__ico">
-                <use xlink:href='images/sprite.svg#icon--heart'></use>
-              </svg>
-            </button>
-
-            <div class="delivery">
-              <p class="delivery__subtitle">Доставка и оплата</p>
-              <ul class="delivery__conditions">
-                <li class="delivery__text">Минимальная сумма заказа - 100 руб.</li>
-                <li class="delivery__text">Время доставки заказа - 60-120 мин.</li>
-                <li class="delivery__text">Оплата осуществляется только банковской картой.</li>
-                <li class="delivery__text">Окончательная сумма заказа формируется после сбора товаров.</li>
-              </ul>
-              <button class="delivery__btn" type="button">Подробнее</button>
-            </div>
-
           </article>
+
+          <div class="delivery">
+            <p class="delivery__subtitle">Доставка и оплата</p>
+            <ul class="delivery__conditions">
+              <li class="delivery__text">Минимальная сумма заказа - 100 руб.</li>
+              <li class="delivery__text">Время доставки заказа - 60-120 мин.</li>
+              <li class="delivery__text">Оплата осуществляется только банковской картой.</li>
+              <li class="delivery__text">Окончательная сумма заказа формируется после сбора товаров.</li>
+            </ul>
+            <a class="delivery__link" href="#">Подробнее</a>
+          </div>
+
+
         </div>
       </div>
     </div>
-           <div class="product__star"></div>
 
     <div class="product-tabs">
 
