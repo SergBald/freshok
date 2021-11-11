@@ -118,7 +118,7 @@ $(function () {
 
   // <<fancyBox>>
   $('[data-fancybox="gallery"]').fancybox({
-    
+    dots: true,
   });
 });
 

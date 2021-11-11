@@ -32,11 +32,11 @@
   }
 }
 
-// .fancybox-is-open .fancybox-inner {
-//   background-color:$white;
-//   margin: 54px 96px;
-//   border-radius: 15px;
-// }
+.fancybox-is-open .fancybox-inner {
+  background-color:$white;
+  margin: 54px 96px;
+  border-radius: 15px;
+}
 
 // .myclass {
 //   display: none;
@@ -56,10 +56,10 @@
 //   vertical-align: middle;
 // }
 
-// .fancybox-toolbar,
-// .fancybox-infobar {
-//   display: none;
-// }
+.fancybox-toolbar,
+.fancybox-infobar {
+  display: none;
+}
 
 // .fancybox-slide--html .fancybox-close-small {
 //   color: $silver-400;
@@ -69,31 +69,31 @@
 //   top: 0;
 // }
 
-// .fancybox-navigation .fancybox-button {
-//   background: none;
-//   @include bg;
-//   background-size: 19px 32px;
-//   opacity: 1;
-//   position: absolute;
-//   top: calc(50%);
-//   transform: translateY(-50%);
+.fancybox-navigation .fancybox-button {
+  background: none;
+  @include bg;
+  background-size: 19px 32px;
+  opacity: 1;
+  position: absolute;
+  top: calc(50%);
+  transform: translateY(-50%);
  
-//   & div {
-//     display: none;
-//   }
+  & div {
+    display: none;
+  }
 
-//   &--arrow_right {
-//     padding: 31px 6px 31px 26px;
-//     right: 60px;
-//     background-image: url('../images/svg/icon/chevron-right.svg');
-//   }
+  &--arrow_right {
+    padding: 31px 6px 31px 26px;
+    right: 60px;
+    background-image: url('../images/svg/icon/chevron-right.svg');
+  }
 
-//   &--arrow_left {
-//     padding: 31px 6px 31px 26px;
-//     left: 60px;
-//     background-image: url('../images/svg/icon/chevron-left.svg');
-//   }
-// }
+  &--arrow_left {
+    padding: 31px 6px 31px 26px;
+    left: 60px;
+    background-image: url('../images/svg/icon/chevron-left.svg');
+  }
+}
 
 // .fancyslide {
 //   background-color: $white;
