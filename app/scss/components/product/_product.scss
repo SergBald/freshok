@@ -32,8 +32,14 @@
   }
 }
 
-// .fancybox-is-open .fancybox-bg {
-//   background-color: rgba(0, 0, 0, 0.15);
+// .fancybox-is-open .fancybox-inner {
+//   background-color:$white;
+//   margin: 54px 96px;
+//   border-radius: 15px;
+// }
+
+// .myclass {
+//   display: none;
 // }
 
 // .fancybox-content {
@@ -89,6 +95,10 @@
 //   }
 // }
 
+// .fancyslide {
+//   background-color: $white;
+// }
+
 .product-content {
 
   &__title {
@@ -116,6 +126,7 @@
 
   &__info-box {
     display: flex;
+    align-items: center;
   }
   
   &__code {

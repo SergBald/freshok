@@ -103,69 +103,35 @@ $(function () {
   // <<styler>>
   $('.select-style, .product-content__input').styler();
 
+  // <<rateYo>>
+  $('.product__star').rateYo({
+    starWidth: "16px",
+    normalFill: "#c1c1c1",
+    ratedFill: "#ffb800",
+  });
+
   // <<SimpleBar>>
   new SimpleBar(document.querySelector('.filters-category__list'), {
     autoHide: false,
     scrollbarMaxSize: 129,
   });
 
-  // <<rateYo>>
-  $('.product__star').rateYo({
-    starWidth: "16px",
-    normalFill: "#c1c1c1",
-    ratedFill: "ffb800",
-  });
-
   // <<fancyBox>>
   $('[data-fancybox="gallery"]').fancybox({
-    buttons: [
-      'slideShow',
-      'share',
-      'zoom',
-      'fullScreen',
-      'download',
-      // 'close'
-    ],
-    loop: false,
-    gutter: 10,
-    keyboard: true,
-    arrows: false,
-    infobar: true,
-    smallBtn: true,
-    toolbar: false,
-    protect: true,
-    modal: true,
-    idleTime: 3,
-    animationEffect: "zoom-in-out",
-    animationDuration: 600,
-    transitionEffect: "rotate",
-    transitionDuration: 400,
-    slideClass: "myClass",
-    baseClass: "myclass",
-    slideShow: {
-      autoStart: true,
-      speed: 1000
-    },
-    youtube: {
-      controls: 0,
-      showinfo: 0
-    },
-    thumbs: {
-      autoStart: true
-    }
+    
   });
 });
 
-$(function () {
-  var containerEl1 = document.querySelector('[data-ref="container-1"]');
-  var containerEl2 = document.querySelector('[data-ref="container-2"]');
+// $(function () {
+//   var containerEl1 = document.querySelector('[data-ref="container-1"]');
+//   var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
-    var config = {
-      controls: {
-        scope: 'local'
-      }
-    };
+//     var config = {
+//       controls: {
+//         scope: 'local'
+//       }
+//     };
 
-    var mixer1 = mixitup(containerEl1, config);
-    var mixer2 = mixitup(containerEl2, config);
-});
+//     var mixer1 = mixitup(containerEl1, config);
+//     var mixer2 = mixitup(containerEl2, config);
+// });
