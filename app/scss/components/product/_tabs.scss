@@ -1,0 +1,26 @@
+.product-tabs {
+  max-width: 690px;
+  margin: 0 auto;
+  
+  &__top {}
+
+  &__top-item {
+    font-size: 18px;
+    font-weight: 600;
+    color: $dark-900;
+    text-transform: uppercase;
+    @extend %ruda;
+  }
+
+  &__content {}
+
+  &__content-item {}
+
+  &__content-info {}
+
+  &__content-text {}
+}
+
+.text--bold {
+  
+}

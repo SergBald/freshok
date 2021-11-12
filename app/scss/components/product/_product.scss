@@ -3,6 +3,8 @@
 }
 
 .product {
+  padding-bottom: 63px;
+  border-bottom: 1px solid $silver-600;
 
   &__inner {
     @include flx;
