@@ -115,10 +115,12 @@ $(function () {
   $('.select-style, .product-content__input').styler();
 
   // <<rateYo>>
-  $('.product__star').rateYo({
+   $('.product__star').rateYo({
     starWidth: "16px",
+    spacing: "6px",
     normalFill: "#c1c1c1",
     ratedFill: "#ffb800",
+    starSvg: "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M.023 6.164a.469.469 0 01.378-.319l4.96-.72L7.58.63a.469.469 0 01.84 0l2.219 4.494 4.96.721a.469.469 0 01.26.8l-3.59 3.498.848 4.94a.469.469 0 01-.68.495L8 13.245l-4.436 2.333a.469.469 0 01-.68-.495l.847-4.94-3.59-3.498a.469.469 0 01-.118-.48z'/></svg>",
   });
 
   // <<SimpleBar>>

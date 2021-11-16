@@ -137,6 +137,10 @@
     }
   }
 
+  &__select-text {
+    text-overflow: clip;
+  }
+
   &__trigger {
     border-left: none;
   }
@@ -171,8 +175,9 @@
   &.dropdown &__select {
     box-shadow: none;
   }
-
+  
   &__dropdown {
+    width: 100%;
     margin: 0;
     padding: 0;
     border: 1px solid $silver-600;
@@ -188,6 +193,8 @@
   }
 
   & li {
+    margin: 15px 12px 15px -30px;
+
     &.selected {
       background-color: transparent;
       color: $dark-500;
