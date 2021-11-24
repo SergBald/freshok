@@ -61,24 +61,26 @@
     display: inline-flex;
   }
 
-  /* .comments-form__star */
-
   &__star {
     display: inline-flex;
     margin-bottom: 15px;
   }
 
   &__review {
+    margin-bottom: 24px;
     @include flx;
   }
 
   &__textarea {
     max-width: 400px;
     width: 100%;
+    flex: auto;
   }
 
   &__input {
-    margin-bottom: 24px;
+    &--name {
+      margin-bottom: 24px;
+    }
   }
 
   &__box {
@@ -86,13 +88,11 @@
     width: 100%;
   }
 
-  /* .comments-form__label */
-
   &__label {
+    display: flex;
+    flex-direction: column;
     flex: auto;
   }
-
-  /* .comments-form__input */
 
   &__textarea,
   &__input {
