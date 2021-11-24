@@ -285,7 +285,8 @@
           <div class="comments__star product__star" data-rateyo-rating="5"></div>
         </div>
         <p class="comments__text">
-          Цвет, конечно, очень насыщенный! Ожидаешь, что и вкус будет такой же яркий (просто взрыв), но нет. Вкус "сдержанно-сладкий" и очень-очень свежий! Рад, что есть такая возможность - пробовать экзотические фрукты.
+          Цвет, конечно, очень насыщенный! Ожидаешь, что и вкус будет такой же яркий (просто взрыв), но нет. Вкус
+          "сдержанно-сладкий" и очень-очень свежий! Рад, что есть такая возможность - пробовать экзотические фрукты.
         </p>
       </div>
 
@@ -293,23 +294,29 @@
       <form class="comments-form" action="#">
         <span class="comments-form__rating">Ваша оценка *</span>
         <span class="product__star comments-form__star"></span>
-        <label class="comments-form__label">Ваш отзыв *
-          <textarea class="comments-form__textarea" name="reviw" placeholder="Введите текст отзыва"></textarea>
-        </label>
-        <div class="comments-form__box">
-          <label class="comments-form__label">Имя
-            <input class="comments-form__input" type="text" placeholder="Введите ваше имя">
+        <div class="comments-form__review">
+          <label class="comments-form__label">Ваш отзыв *
+            <textarea class="comments-form__textarea" name="reviw" placeholder="Введите текст отзыва"></textarea>
           </label>
-          <label class="comments-form__label">Email *
-            <input class="comments-form__input footer-form__input" type="text" placeholder="youremail@mail.com">
-          </label>
+          <div class="comments-form__box">
+            <label class="comments-form__label">Имя
+              <input class="comments-form__input" type="text" placeholder="Введите ваше имя">
+            </label>
+            <label class="comments-form__label">Email *
+              <input class="comments-form__input footer-form__input" type="text" placeholder="youremail@mail.com">
+            </label>
+          </div>
         </div>
-        <label class="comments-form__label comments__checkbox">
-          <input class="comments-form__input filters__checkbox" type="checkbox">
-          <p class="comments-form__checkbox">Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих
-            комментариев.</p>
+
+        <label class="filters__label">
+          <input class="filters__input" type="checkbox">
+          <span class="comments-form__checkbox filters__checkbox"></span>
+          <span class="comments-form__checkbox-text">
+            Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.
+          </span>
         </label>
-        <button class="button" type="submit">Оставить отзыв</button>
+       
+        <button class="comments-form__button button" type="submit">Оставить отзыв</button>
       </form>
     </div>
   </div>

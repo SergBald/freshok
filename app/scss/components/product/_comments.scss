@@ -53,8 +53,6 @@
   &__title {
     margin: 72px 0 48px 0;
   }
-
-  &__checkbox {}
 }
 
 .comments-form {
@@ -66,34 +64,56 @@
   /* .comments-form__star */
 
   &__star {
-        display: inline-flex;
-
+    display: inline-flex;
+    margin-bottom: 15px;
   }
 
-  /* .comments-form__textarea */
+  &__review {
+    @include flx;
+  }
 
-  &__textarea {}
+  &__textarea {
+    max-width: 400px;
+    width: 100%;
+  }
 
-  /* .comments-form__box */
+  &__input {
+    margin-bottom: 24px;
+  }
 
-  &__box {}
+  &__box {
+    max-width: 260px;
+    width: 100%;
+  }
 
   /* .comments-form__label */
 
-  &__label {}
+  &__label {
+    flex: auto;
+  }
 
   /* .comments-form__input */
 
-  &__input {}
+  &__textarea,
+  &__input {
+    display: block;
+    margin-top: 12px;
+    padding: 18px;
+    @include bdr;
+  }
 
-  /* .comments-form__checkbox */
+  &__checkbox {
+    flex: 1 0 auto;
+  }
 
-  &__checkbox {}
-}
+  &__checkbox-text {
+    line-height: 1.3;
+    letter-spacing: 0;
+  }
 
-.filters {
-
-  /* .filters__checkbox */
-
-  &__checkbox {}
+  &__button {
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    margin-top: 24px;
+  }
 }
