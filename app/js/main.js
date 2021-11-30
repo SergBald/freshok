@@ -108,7 +108,6 @@ $(function () {
 
     $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
     $($(this).attr('href')).addClass('product-tabs__content-item--active');
-
   });
 
   // <<styler>>
@@ -132,6 +131,7 @@ $(function () {
   // <<fancyBox>>
   $('[data-fancybox="gallery"]').fancybox({
     dots: true,
+    
   });
 });
 
